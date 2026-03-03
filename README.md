@@ -2,7 +2,7 @@
 
 Este é o repositório do meu portfólio pessoal web, construído para unir e apresentar minhas duas paixões: o desenvolvimento Front-End e o design de marcas/identidade visual.
 
-🔗 Acesse o projeto online aqui
+🔗 Acesse o projeto online aqui: https://isardrgs.github.io/Portfolio-Design/
 
 ## 💻 Sobre o Projeto
 
