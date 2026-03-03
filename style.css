@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #ffffff;
+}
+
+p, h1, h2, h3 {
+    letter-spacing: -8%;
+}
+
+header {
+    padding: 2rem;
+    background-color: #4B1535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 105px;
+}
+
+header ul {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+#home {
+    background-color: #4B1535;
+}
+
+#home img {
+    width: 100%;
+}
+
+#deco {
+    background-color: #F9D367;
+}
+
+#deco img {
+    width: 100%;
+}
+
+#about-me {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    width: 100%;
+    height: 80vh;
+    background-color: #F9D367;
+}
+
+#fotos img {
+    width: 50vw;
+}
+
+#texto {
+    color: #4B1535;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto div {
+    width: 30%;
+    position: absolute;
+}
+
+#texto img {
+    width: 40vw;
+}
+
+#texto h2 {
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#texto p {
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#projects {
+    justify-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    width: 100%;
+    height: 50vh;
+}
+
+#projects h3 {
+    color: #4B1535;
+    font-weight: 800;
+    display: flex;
+    font-size: 2.6rem;
+    padding: 1rem;
+    justify-content: center;
+    margin: 0;
+}
+
+.images {
+    gap: 12rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.images .text {
+    text-align: center;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.images img {
+    width: 21vw;
+    transition: box-shadow 0.4s ease;
+}
+
+.images .text:hover {
+    transform: scale(1.08);
+}
+
+.images .text:hover img {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.text p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.text .titulo {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: #4B1535;
+    color: #fefefe;
+    margin-top: 7rem;
+    gap: 50vw;
+}
+
+footer h3 {
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 200;
+    transition: all 0.3s ease;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+footer .redes a:hover p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+
+@media screen and (min-width: 1920px) {
+    #about-me {
+        gap: 5vw; 
+    }
+    #fotos img {
+        width: 35vw; 
+    }
+    #texto img {
+        width: 25vw; 
+    }
+    #texto div {
+        width: 20%;
+    }
+    .images {
+        gap: 8rem; 
+    }
+    footer {
+        gap: 30vw; 
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #about-me {
+        height: auto;
+        padding: 4rem 0;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    #fotos img {
+        width: 70vw;
+    }
+    #texto {
+        width: 80%;
+    }
+    #texto img {
+        display: none; 
+    }
+    #texto div {
+        width: 100%;
+        position: relative; 
+        text-align: center;
+    }
+    #projects {
+        height: auto;
+        padding-bottom: 4rem;
+    }
+    .images {
+        grid-template-columns: 1fr 1fr; 
+        gap: 4rem;
+    }
+    .images img {
+        width: 35vw;
+    }
+    footer {
+        gap: 20vw;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    header ul {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #about-me {
+        height: auto;
+        padding: 3rem 0;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #fotos img {
+        width: 90vw;
+    }
+    #texto {
+        width: 90%;
+    }
+    #texto img {
+        display: none; 
+    }
+    #texto div {
+        width: 100%;
+        position: relative; 
+        text-align: center;
+    }
+    #texto h2 {
+        font-size: 3.5rem;
+    }
+    #texto p {
+        font-size: 1.2rem;
+    }
+    #projects {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+    .images {
+        grid-template-columns: 1fr; 
+        gap: 3rem;
+    }
+    .images img {
+        width: 70vw;
+    }
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+}
